@@ -4,6 +4,7 @@ html {
 .containerInfo{
     background-color: aquamarine;
 }
+
 h1 {
     text-align: center;
 }
@@ -21,6 +22,10 @@ h1 {
     width: 40%;
     height: 250px;
 }
-button {
+#button {
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
     
+
 }
