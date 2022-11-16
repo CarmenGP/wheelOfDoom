@@ -17,3 +17,9 @@ function removeElementFromList() {
     console.log(deletedList)
     console.log("-------------------------------------------------")
 }
+
+
+
+
+list1 = document.getElementById("initialList");
+
