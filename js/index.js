@@ -5,7 +5,7 @@ div.innerText = "Lorem Ipsum "+persona+" is simply dummy text of the "+persona+"
 document.body.append(div)*/
 const initialList = [];
 const deletedList = [];
-initialList.push("camila", "sierri", "alesia", "carmen", "beatriz");
+initialList.push("Camila", "Sierri", "Alesia", "Carmen", "Beatriz");
 console.log(initialList);
 
 function removeElementFromList() {
@@ -16,10 +16,39 @@ function removeElementFromList() {
     console.log(initialList)
     console.log(deletedList)
     console.log("-------------------------------------------------")
+    return initialList
+
+
 }
 
+const listaHtml = document.querySelector('#list1');
+
+
+function crearListaJugadores(){
+    initialList.forEach(jugador => {
+    const crearElemento = document.createElement('li')
+    crearElemento.textContent = jugador
+    listaHtml.appendChild (crearElemento)
+
+
+})}
+
+crearListaJugadores()
 
 
 
-list1 = document.getElementById("initialList");
+const boton = document.querySelector("#botonamigas");
+boton.addEventListener ("click", removeElementFromList() )
+   
 
+
+/*
+
+const amigas = ["bea","ana","maria"]
+function borrarJugadores() {
+    const borrarElemento = document.removeElement('li')
+    borrarElemento.textContent = jugador
+    initialList.removeChild (borrarElemento)
+}
+
+borrarJugadores()*/
