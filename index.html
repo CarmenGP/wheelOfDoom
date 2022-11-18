@@ -9,41 +9,44 @@
 </head>
 <body>
     <header>
-        <img src="#" alt="logo">
+        <img src="../img/logo.png" class="logo" alt="logo">
 
     </header>
     <main>
-        <audio src="./musica/lifeisstrangesong.mp3" autoplay="autoplay" loop="loop"></audio>
         <section class="containerInfo">
             <h1>
-                Vientos de Libertad
+                title
             </h1>
             <p>
-                En un oscuro y frondoso bosque, vive una especie de pájaros que necesitan tu ayuda para volar. Ayúdales a todos a poder surcar los cielos y tener la libertad de ir a donde quieran.
-Te animas ?
-Pulsa a jugar y podremos ver lo que sucede y a quién le sucede la experiencia de alcanzar el vuelo por los siete puntos cardinales del universo.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum purus ligula, pharetra non purus at, malesuada pharetra lectus. Phasellus pellentesque, erat et accumsan posuere, diam est accumsan lorem, quis sagittis felis velit ut nisi. Vestibulum bibendum ultricies suscipit. In tincidunt porttitor mi, nec rutrum odio egestas a. Mauris placerat vehicula leo, eu pharetra lacus scelerisque eget. Nam et mollis sem. Suspendisse varius ac nunc sit amet pretium. Etiam suscipit molestie tincidunt
             </p>
         </section>
         <div class="players">
-            <div class="list1">
+            <h3>Lista 1</h3>
+            <div class="list1" id="list1">
 
             </div>
-            <div class="list2">
+            <h3>Lista 2</h3>
+            <div class="list2" id="list2">
 
             </div>
-            <button>
-                empezar
+            <h1 id= "titulo" >Juego en proceso</h1>
+            <button id= "boton" onclick="removeElementFromList()">
+                Jugar
             </button>
+            <button id="nuevoJuego" disabled onclick="location.reload()"> Comenzar de nuevo</button>
         </div>
         <div class="animation">
 
         </div>
-
     </main>
     <footer>
+        <div class="separated"></div>
+            
         <p>
             Developed by The Big Bang Birds
         </p>
     </footer>   
 </body>
+<script src="js/index.js"></script>
 </html>
