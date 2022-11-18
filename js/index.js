@@ -20,13 +20,17 @@ function removeElementFromList() {
 const players = document.getElementById('list1');
 
 function addPlayer(){
-
-    initialList.forEach(jugador =>{
-
-        players.innerHTML += `
+    document.getElementById("list1").innerHTML = "";
+    /*players.innerHTML = ``;*/
+    initialList.forEach(jugador =>{    
+    players.innerHTML += `
         <div>${jugador}</div>`
     })
+    
 }
+
+
+
 const removed = document.getElementById('list2');
 
 function deletePlayer(jugadorEliminado){
@@ -35,15 +39,15 @@ function deletePlayer(jugadorEliminado){
 
 }
 
-
 addPlayer()
 
-
 deletePlayer(deletedList[0])
+
+movimientopaisaje()
 
 function activarBoton(){
     removeElementFromList();
     addPlayer();
     deletePlayer(); 
-    removeElementFromList(); 
+    eventoTransicionCss();   
 }
