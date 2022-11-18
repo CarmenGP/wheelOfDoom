@@ -24,25 +24,22 @@
         
         <div class="players">
             <div id="list1">
-            <ol>JUGADORES</ol>               
+           <!--  <ol>JUGADORES</ol>    -->            
             </div>
-            <div class="list2">
-
-            </div>
+            <div class="list2"></div>
+            <ol>ELIMINADOS</ol>
             <h1 id= "titulo" >Juego en proceso</h1>
-            <button id= "boton" onclick="removeElementFromList()">
+            <button id= "boton" onclick="activarBoton()">
                 Jugar
             </button>
             <button id="nuevoJuego" disabled onclick="location.reload()"> Comenzar de nuevo</button>
+            <div class="jugadores" id="list1"></div>
+            <div class="eliminados" id="list2"></div>
         </div>
-        <div class="animation">
-
-        </div>
+        <div class="animation"></div>
     </main>
     <footer>
-        <p>
-            Developed by The Big Bang Birds
-        </p>
+        <p>Developed by The Big Bang Birds</p>
     </footer>   
 </body>
 <script src="js/index.js"></script>

@@ -1,15 +1,15 @@
 const initialList = [];
-const deletedList = [];
+const deletedList = [5];
 initialList.push("Camila", "Sierri", "Alesia", "Carmen", "Beatriz");
-console.log(initialList);
+/* console.log(initialList); */
 
 function removeElementFromList() {
     const length = initialList.length;
     const elementToDelete = (Math.random() * length);
     const deleted = initialList.splice(elementToDelete, 1);
     deletedList.unshift(deleted[0])
-    console.log(initialList)
-    console.log(deletedList)
+    /* console.log(initialList)
+    console.log(deletedList) */
     console.log("-------------------------------------------------")
     if (length == 1) {
         document.getElementById("titulo").innerHTML= "Fin Del Juego";
@@ -20,9 +20,9 @@ function removeElementFromList() {
 const players = document.getElementById('list1');
 
 function addPlayer(){
-
+    players.innerHTML = ``;
     initialList.forEach(jugador =>{
-
+        console.log (jugador);        
         players.innerHTML += `
         <div>${jugador}</div>`
     })
@@ -31,7 +31,7 @@ const removed = document.getElementById('list2');
 
 function deletePlayer(jugadorEliminado){
     removed.innerHTML +=`
-    <div>${jugadorEliminado}`
+    <div>${jugadorEliminado}</div>`
 
 }
 
@@ -45,5 +45,7 @@ function activarBoton(){
     removeElementFromList();
     addPlayer();
     deletePlayer(); 
-    removeElementFromList(); 
 }
+
+
+
