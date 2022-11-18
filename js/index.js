@@ -1,8 +1,3 @@
-/*const persona = "juana";
-
-const div = document.createElement("div")
-div.innerText = "Lorem Ipsum "+persona+" is simply dummy text of the "+persona+" printing and typesetting industry. Lorem "+persona+" Ipsum has been the industry's standard dummy text ever since the 1500s, "+persona+" when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
-document.body.append(div)*/
 const initialList = [];
 const deletedList = [];
 initialList.push("camila", "sierri", "alesia", "carmen", "beatriz");
@@ -16,4 +11,11 @@ function removeElementFromList() {
     console.log(initialList)
     console.log(deletedList)
     console.log("-------------------------------------------------")
-}
+    if (length == 1) {
+        document.getElementById("titulo").innerHTML= "Fin Del Juego";
+        document.getElementById("boton").disabled = true;
+        document.getElementById("nuevoJuego").disabled = false;
+         
+        } 
+    }
+
