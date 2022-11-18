@@ -27,3 +27,23 @@ function addPlayer(){
         <div>${jugador}</div>`
     })
 }
+const removed = document.getElementById('list2');
+
+function deletePlayer(jugadorEliminado){
+    removed.innerHTML +=`
+    <div>${jugadorEliminado}`
+
+}
+
+
+addPlayer()
+
+
+deletePlayer(deletedList[0])
+
+function activarBoton(){
+    removeElementFromList();
+    addPlayer();
+    deletePlayer(); 
+    removeElementFromList(); 
+}
