@@ -17,3 +17,13 @@ function removeElementFromList() {
         document.getElementById("nuevoJuego").disabled = false;        
         } 
 }
+const players = document.getElementById('list1');
+
+function addPlayer(){
+
+    initialList.forEach(jugador =>{
+
+        players.innerHTML += `
+        <div>${jugador}</div>`
+    })
+}
