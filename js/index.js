@@ -1,7 +1,6 @@
 const initialList = [];
 const deletedList = [];
-initialList.push("Camila", "Sierri", "Alesia", "Carmen", "Beatriz");
-console.log(initialList);
+
 
 function removeElementFromList() {
     const length = initialList.length;
@@ -16,38 +15,83 @@ function removeElementFromList() {
         document.getElementById("boton").disabled = true;
         document.getElementById("nuevoJuego").disabled = false;        
         } 
+        renderList();
 }
+    function init () {
+        initialList.push("camila", "sierri", "alesia", "carmen", "beatriz");
+        renderLists()
+    }
+​
+    function renderLists() {
+        document.getElementById("list1").innerHTML = ""
+        document.getElementById("list2").innerHTML = ""
+        initialList.forEach(name => {
+            const divName = document.createElement("div");
+            divName.id = name;
+            divName.innerText = name;
+            divName.className = "names";
+            document.getElementById("list1").append(divName);
+        })
+​
+        deletedList.forEach(name => {
+            const divName = document.createElement("div");
+            divName.id = name;
+            divName.innerText = name;
+            divName.className = "names";
+            document.getElementById("list2").append(divName);
+        })
+    }
+​
+    init();
+
+
+/*
+
+
+
+
 const players = document.getElementById('list1');
 
 function addPlayer(){
-    document.getElementById("list1").innerHTML = "";
-    /*players.innerHTML = ``;*/
+    document.getElementById("list1").innerHTML ="";
     initialList.forEach(jugador =>{    
-    players.innerHTML += `
+    players.innerHTML +=`
         <div>${jugador}</div>`
-    })
-    
+    })  
 }
-
-
-
 const removed = document.getElementById('list2');
 
-function deletePlayer(jugadorEliminado){
+function deletePlayer(jugadorEliminado){ 
     removed.innerHTML +=`
     <div>${jugadorEliminado}`
-
-}
-
+        
+} 
 addPlayer()
-
 deletePlayer(deletedList[0])
 
-movimientopaisaje()
+/*movimientopaisaje()
 
 function activarBoton(){
     removeElementFromList();
     addPlayer();
     deletePlayer(); 
-    eventoTransicionCss();   
+    
 }
+
+printList()
+function init(){
+    initialList.push("camila","bea","sandra")
+    printList()
+}
+function printList() {
+    document.getElementById("list1").innerHTML ="";
+    document.getElementById("list2").innerHTML ="";
+    initialList.forEach(name =>{
+        let divName = document.createElement('div')
+        divName.id = name
+        divName.innerHTML = name
+        document.getElementById("list1")append(divName)
+    })
+}
+init()
+*/
