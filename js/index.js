@@ -7,8 +7,8 @@ function removeElementFromList() {
     const elementToDelete = (Math.random() * length);
     const deleted = initialList.splice(elementToDelete, 1);
     deletedList.unshift(deleted[0])
-    console.log(initialList)
-    console.log(deletedList)
+    /* console.log(initialList)
+    console.log(deletedList) */
     console.log("-------------------------------------------------")
     if (length == 1) {
         document.getElementById("titulo").innerHTML= "Fin Del Juego";
