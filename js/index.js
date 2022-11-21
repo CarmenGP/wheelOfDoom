@@ -1,4 +1,4 @@
-const initialList = ["Adriana","Alba","Alesia","Ana","Bea","Camila","CarmenC","CarmenG","Elena","Esther","Flor","Himo","Leidy","LolaG","LoalaN","Sierri","Natalia","Noa","PalomaB","PalomaR","Paula","Raquel","Sandra","VeroF","VeroK"];
+const initialList = [];
 const deletedList = [];
 function removeElementFromList() {
     const length = initialList.length;
@@ -13,7 +13,7 @@ function removeElementFromList() {
         renderList();
 }
     function init () {
-        initialList.push("camila", "sierri", "alesia", "carmen", "beatriz");
+        initialList.push("Adriana","Alba","Alesia","Ana","Bea","Camila","CarmenC","CarmenG","Elena","Esther","Flor","Himo","Leidy","LolaG","LoalaN","Sierri","Natalia","Noa","PalomaB","PalomaR","Paula","Raquel","Sandra","VeroF","VeroK");
         renderList()
     }
     function renderList() {
