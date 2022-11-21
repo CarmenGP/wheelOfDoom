@@ -21,27 +21,25 @@
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum purus ligula, pharetra non purus at, malesuada pharetra lectus. Phasellus pellentesque, erat et accumsan posuere, diam est accumsan lorem, quis sagittis felis velit ut nisi. Vestibulum bibendum ultricies suscipit. In tincidunt porttitor mi, nec rutrum odio egestas a. Mauris placerat vehicula leo, eu pharetra lacus scelerisque eget. Nam et mollis sem. Suspendisse varius ac nunc sit amet pretium. Etiam suscipit molestie tincidunt
             </p>
         </section>
-        <section class="containerMain">
-            <div class="players">
-                <div class="list1">
-
-                </div>
-                <div class="list2">
-
-                </div>
+        
+        <div class="players">
+            <h3>Lista 1</h3>
+            <div class="list1" id="list1">
             </div>
-            <div id="button">
-            <button>empezar</button>
+            <h3>Lista 2</h3>
+            <div class="list2" id="list2">
             </div>
-        </section>
-        <section class="animation">
-
-        </section>
+            <h1 id= "titulo" >Juego en proceso</h1>
+            <button id= "boton" onclick="removeElementFromList()">
+                Jugar
+            </button>
+            <button id="nuevoJuego" disabled onclick="location.reload()"> Comenzar de nuevo</button>
+        </div>
+        <div class="animation"></div>
     </main>
     <footer>
-        <p>
-            Developed by The Big Bang Birds
-        </p>
+        <p>Developed by The Big Bang Birds</p>
     </footer>   
 </body>
+<script src="js/index.js"></script>
 </html>
