@@ -45,13 +45,6 @@
     background-color: aqua;
     border-radius: 5px;
 }
-/*
-#boton , #nuevoJuego{
-    display: flex;
-    justify-content: space-around;
-    padding-top: 10px;
-}*/
-
 .listsContainer {
     display: flex;
     justify-content: space-around;   
