@@ -1,4 +1,4 @@
-const initialList = [];
+const initialList = ["Adriana","Alba","Alesia","Ana","Bea","Camila","CarmenC","CarmenG","Elena","Esther","Flor","Himo","Leidy","LolaG","LoalaN","Sierri","Natalia","Noa","PalomaB","PalomaR","Paula","Raquel","Sandra","VeroF","VeroK"];
 const deletedList = [];
 function removeElementFromList() {
     const length = initialList.length;
