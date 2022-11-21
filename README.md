@@ -1,43 +1,47 @@
 #  Big Bang Birds - Wheel of Doom
 
 ##  Descripción
+###     Vientos de Libertad
 
-Aquí tienes tu formación CODER, justo lo que necesitas para adquirir conocimientos a través de la magia. Lo que nunca se explica, te lo ofrecemos aquí, intuitivo y profesional para que reconozcas tus habilidades. ![ emoticono28 ](https://user-images.githubusercontent.com/108950985/200850501-857c2c8b-d7af-4237-889c-3d60d4800b34.png)
-
+En un oscuro y frondoso bosque, vive una especie de pájaros que necesitan tu ayuda para volar. Ayúdales a todos a poder surcar los cielos y tener la libertad de ir a donde quieran.
+Te animas ?
+Pulsa a jugar y podremos ver lo que sucede y a quién le sucede la experiencia de alcanzar el vuelo por los siete puntos cardinales del universo.
 
 ##  Miembros
 
-* Paloma Ruiz Ramírez - Product Owner
-https://github.com/birdsinyourgarden
-
-* Sierri Pérez Sánchez - SCRUM Master
-https://github.com/sierriconvoz
-
-* Carmen Cruces Fernandez
-https://github.com/CarmenCruces
-
-* Alesia Baldeón Machuca
+* Alesia Baldeón Machuca - Product Owner
 https://github.com/AlesiaCoder
 
-* Florencia Tiscornia
-https://github.com/FlorTiscornia
+* Carmen Gallardo - SCRUM Master
+https://github.com/CarmenGP
+
+* Camila Ruíz
+https://github.com/camilaruiz17
+
+* Bea Ávila
+https://github.com/Beadeavila
+
+* Sierri Pérez Sánchez
+https://github.com/sierriconvoz
 
 ##  Capturas de pantalla
 
-![ inicio de demostración ](https://user-images.githubusercontent.com/108950985/201040794-c6005ea2-a38a-4b02-ad00-25b034e2558b.png)
-![ democatalogo ](https://user-images.githubusercontent.com/108950985/201040812-db2dfd60-8b9f-48a0-9c5a-568065ee1d8f.png)
-![ producto de demostración ](https://user-images.githubusercontent.com/108950985/201040853-9b32e22d-922a-44e9-b353-50aceae52cbf.png)
+<img src="https://user-images.githubusercontent.com/116550406/203028138-136a6da2-5d96-424d-9a66-d8b56ef5b804.png" width="300px">
 
-##  pilas
 
-En este proyecto hemos utilizado HTML 5, CSS 3 y Bootstrap.
+
+
+
+
+
 
 ##  Metodología
 
 Hemos trabajado con metodología Agile y SCRUM. También hemos trabajado con programación Mob.
 
 ##  Próximos pasos
+* Agregar funcionalidad de edición por usuarios.
+* Colocar botones de compartir en redes sociales
 
-Integración de la funcionalidad de favoritos y carrito de compras.
-Implementar el sistema de gestión de usuarios.
-Implementación de la funcionalidad de encabezado y pie de página de la versión de escritorio.
+
+
