@@ -2,5 +2,42 @@
     display: flex;
     max-width: 100px;
     margin: auto;
-
 }
+    .footer{
+        margin: auto;
+        text-align: center;
+        margin: 60px 0;
+    }
+    
+.rombo{
+        width: 10px;
+        height: 10px;
+        background: rgb(147,39,143);
+        background: linear-gradient(90deg, rgba(147,39,143,1) 0%, rgba(0,255,255,1) 100%);
+        transform: rotate(45deg);
+        margin: 0 auto;
+    }
+    
+    .separator {
+        position: relative;
+        display: inline-block;
+    }
+    
+    .separator::before {
+        content: "";
+        border: 1px solid #ccc;
+        width: 60px;
+        position: absolute;
+        top: 4px;
+        right: 20px;
+    }
+    .separator::after {
+        content: "";
+        position: absolute;
+        border: 1px solid #ccc;
+        
+        width: 60px;
+        top: 4px;
+        left: 20px;
+    }
+    
