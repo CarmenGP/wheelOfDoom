@@ -1,0 +1,21 @@
+.players {
+    background-color: blueviolet;
+    width: 95%;
+    min-height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+.list1, .list2{
+    border: 1px solid black;
+    width: 40%;
+    height: 250px;
+}
+#boton , #nuevoJuego{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 10px;
+    
+
+}
