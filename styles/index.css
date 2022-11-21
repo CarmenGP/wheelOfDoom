@@ -1,21 +1,38 @@
 .players {
-    background-color: blueviolet;
     width: 95%;
-    min-height: 400px;
+    height: 400px;
+    overflow: auto;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
     align-items: center;
     gap: 15px;
 }
-.list1, .list2{
+
+.list1, .list2 {
+    max-width: 100px;
+    margin:auto;
+    margin-top: 10px;
+    padding:15px;
     border: 1px solid black;
-    width: 40%;
-    height: 250px;
+    width: 100%;
+    height: 400px;
+    overflow: auto;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    box-shadow: 0px 1px 10px rgba(0,0,0,0.45);
+    
+}
+.list1 ::-webkit-scrollbar{
+    width: 30px;
+    background: #dd1515;
+}
+.list1 ::-webkit-scrollbar-thumb{
+    background-color: aqua;
+    border-radius: 5px;
 }
 #boton , #nuevoJuego{
     display: flex;
     justify-content: space-around;
     padding-top: 10px;
-    
-
 }
