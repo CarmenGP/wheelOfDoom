@@ -1,6 +1,6 @@
 #  Big Bang Birds - Wheel of Doom
 
-##  Descripción
+## Description
 ###     Vientos de Libertad
 
 En un oscuro y frondoso bosque, vive una especie de pájaros que necesitan tu ayuda para volar. Ayúdales a todos a poder surcar los cielos y tener la libertad de ir a donde quieran.
