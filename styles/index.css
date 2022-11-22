@@ -1,0 +1,8 @@
+h1 {
+    font-family: 'Norican', cursive;
+    background: -webkit-linear-gradient( #93278F, #00ffff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}  
+
+
