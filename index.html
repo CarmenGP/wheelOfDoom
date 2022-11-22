@@ -1,45 +1,67 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Big Bang Bird</title>
-    <link rel="stylesheet" href="./styles/index.css">
-</head>
-<body>
-    <header> 
-        <img src="#" alt="logo">
-
-    </header>
-    <main>
-        <section class="containerInfo">
-            <h1>
-                title
-            </h1>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum purus ligula, pharetra non purus at, malesuada pharetra lectus. Phasellus pellentesque, erat et accumsan posuere, diam est accumsan lorem, quis sagittis felis velit ut nisi. Vestibulum bibendum ultricies suscipit. In tincidunt porttitor mi, nec rutrum odio egestas a. Mauris placerat vehicula leo, eu pharetra lacus scelerisque eget. Nam et mollis sem. Suspendisse varius ac nunc sit amet pretium. Etiam suscipit molestie tincidunt
-            </p>
-        </section>
-        
-        <div class="players">
-            <h3>Lista 1</h3>
-            <div class="list1" id="list1">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image7x-icon" href="./imgs/faviconbird.png">
+        <title>Big Bang Bird</title>
+        <link rel="stylesheet" href="./styles/index.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Norican&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <img src="./imgs/logobigbangbirds.png" alt="logo">
+        </header>
+        <main>
+            <section class="containerInfo">
+                <h1 class="titleFonts">Vientos de Libertad</h1>
+                <p>
+                    En un oscuro y frondoso bosque, vive una especie de pájaros que necesitan tu ayuda para volar. Ayúdales a todos a poder surcar los cielos y tener la libertad de ir a donde quieran.
+Te animas ?
+Pulsa a jugar y podremos ver lo que sucede y a quién le sucede la experiencia de alcanzar el vuelo por los siete puntos cardinales del universo.
+                </p>
+            </section>
+            <section class="playersListContainer">
+                <div class="formContainer">
+                    <input type="text" placeholder="Nombre">
+                    <button>Añadir</button>
+                </div>
+                <div class="listsContainer">
+                    <div class="dreamyBirdsContainer">
+                        <div class="dreamyBirdsTitle"><img src="./imgs/forest.svg" alt="logo"></div>
+                        <div class="listDreamyBirds" id="list1">
+                            
+                        </div>
+                    </div>
+                    <div class="freeBirdsContainer">
+                        <div class="freeBirdsTitle"><img src="./imgs/clouds.svg" alt="logo"></div>
+                        <div class="listFreeBirds" id="list2">
+                            
+                    </div>
+                    </div>
+                </div>
+                <h4 id="titulo">Juego en Proceso</h4>
+                <div class= "buttonsContainer">
+                    <button id="boton" onclick="removeElementFromList()">Jugar</button>
+                    <button id="nuevoJuego" disabled onclick="location.reload()">Comenzar de nuevo</button>
+                </div>
+            </section>
+            <div class="animation">
             </div>
-            <h3>Lista 2</h3>
-            <div class="list2" id="list2">
+        </main>
+        <script src="./js/index.js">
+        </script>
+        <footer>
+            <div class="separator">
+                <div class="rombo"></div>
             </div>
-            <h1 id= "titulo" >Juego en proceso</h1>
-            <button id= "boton" onclick="removeElementFromList()">
-                Jugar
-            </button>
-            <button id="nuevoJuego" disabled onclick="location.reload()"> Comenzar de nuevo</button>
-        </div>
-        <div class="animation"></div>
-    </main>
-    <footer>
-        <p>Developed by The Big Bang Birds</p>
-    </footer>   
-</body>
-<script src="js/index.js"></script>
+            <p>Developed by The Big Bang Birds</p>
+        </footer>
+    </body>
 </html>

@@ -6,9 +6,9 @@ function removeElementFromList() {
     const deleted = initialList.splice(elementToDelete, 1);
     deletedList.unshift(deleted[0])
     if (length == 1) {
-        document.getElementById("titulo").innerHTML= "Fin Del Juego";
+        document.getElementById("titulo").innerHTML= "Fin del Juego";
         document.getElementById("boton").disabled = true;
-        document.getElementById("nuevoJuego").disabled = false;        
+        document.getElementById("nuevoJuego").disabled = false;       
         } 
         renderList();
 }
