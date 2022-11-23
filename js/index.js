@@ -41,5 +41,9 @@ function removeElementFromList() {
         })
     }
 
-
+    const playSound = function() {
+        document.getElementById('sonidolaser').play();
+        document.removeEventListener('click', playSound);
+    }
+    document.addEventListener('click', playSound);
 
