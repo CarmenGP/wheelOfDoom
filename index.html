@@ -15,16 +15,18 @@
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
     </head>
     <body>
+        <!-- <audio src="./music/lifeisstrangesong.mp3"" autoplay="autoplay" loop="loop"></audio> -->
         <header>
             <img src="./imgs/logobigbangbirds.png" alt="logo">
         </header>
         <main>
+            <audio src="./musica/lifeisstrangesong.mp3" autoplay="autoplay" loop="loop"></audio>
+    
             <section class="containerInfo">
                 <h1 class="titleFonts">Vientos de Libertad</h1>
                 <p>
                     En un oscuro y frondoso bosque, vive una especie de pájaros que necesitan tu ayuda para volar. Ayúdales a todos a poder surcar los cielos y tener la libertad de ir a donde quieran.
-Te animas ?
-Pulsa a jugar y podremos ver lo que sucede y a quién le sucede la experiencia de alcanzar el vuelo por los siete puntos cardinales del universo.
+¿Te animas? Pulsa a <b>jugar</b> y podremos ver lo que sucede y a quién le sucede la experiencia de alcanzar el vuelo por los siete puntos cardinales del universo.
                 </p>
             </section>
             <section class="playersListContainer">
@@ -46,14 +48,35 @@ Pulsa a jugar y podremos ver lo que sucede y a quién le sucede la experiencia d
                     </div>
                     </div>
                 </div>
-                <h4 id="titulo">Juego en Proceso</h4>
+                <h4 id="titulo">Juego en proceso</h4>
                 <div class= "buttonsContainer">
                     <button id="boton" onclick="removeElementFromList()">Jugar</button>
                     <button id="nuevoJuego" disabled onclick="location.reload()">Comenzar de nuevo</button>
                 </div>
             </section>
-            <div class="animation">
-            </div>
+            <section class="animation">
+                <div class="animationSpace"></div>
+                <div class="animationContainer" id="animationForest">
+                    <img src="./imgs/one/one1.png" alt="Diapositiva 1" class="first" id="forestFirst">
+                    <img src="./imgs/one/one2.png" alt="Diapositiva 2" class="second" id="forestSecond">
+                    <img src="./imgs/one/one3.png" alt="Diapositiva 3" class="third" id="forestThird">
+                </div>
+                <div class="animationContainer" id="animationBird">
+                    <img src="./imgs/two/two1.png" alt="Diapositiva 1" class="first" id="birdFirst">
+                    <img src="./imgs/two/two2.png" alt="Diapositiva 2" class="second" id="birdSecond">
+                    <img src="./imgs/two/two3.png" alt="Diapositiva 3" class="third" id="birdThird">
+                    <img src="./imgs/two/two4.png" alt="Diapositiva 4" class="fourth" id="birdFourth">
+                    <img src="./imgs/two/two5.png" alt="Diapositiva 5" class="fifth" id="birdFifth">
+                </div>
+                <div class="animationContainer" id="animationSky">
+                    <img src="./imgs/three/three1.png" alt="Diapositiva 1" class="first" id="skyirst">
+                    <img src="./imgs/three/three2.png" alt="Diapositiva 2" class="second" id="skySecond">
+                    <img src="./imgs/three/three3.png" alt="Diapositiva 3" class="third" id="skyThird">
+                    <img src="./imgs/three/three4.png" alt="Diapositiva 4" class="fourth" id="skyFourth">
+                    <img src="./imgs/three/three5.png" alt="Diapositiva 5" class="fifth" id="skyFifth">
+                    <img src="./imgs/three/three6.png" alt="Diapositiva 6" class="sixth" id="skySixth">
+                </div>
+            </section>
         </main>
         <script src="./js/index.js">
         </script>

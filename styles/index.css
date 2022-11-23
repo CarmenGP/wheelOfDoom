@@ -1,21 +1,42 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+@font-face {
+    font-family: weddingvintage;
+    src: url(../fonts/weddingVintage.ttf);
+}
 
 body {
     font-family: 'Poppins', sans-serif;;
     margin: 0px;
+    background-image: url(../imgs/birds.png);
 }
+
+button, input {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+}
+
+
+/*HEADER*/
 
 header {
     text-align: center;
 }
 h1{
-    font-family: 'Norican', cursive;
+    font-family: 'Norican', cursive; 
+    font-size: 36px;
+    line-height: 1.2em;
+}
+
+.titleFonts{
+    font-family: weddingvintage;    
 }
 
 header img {
     max-width: 150px;
     margin: 20px 0;
 }
+
+/*INTRO*/
 
 .containerInfo {
     text-align: center;
@@ -36,22 +57,23 @@ header img {
     font-weight: bold;
 }
 
+
+/*FORM*/
+
 .formContainer {
     text-align: center;
     margin-top: 50px !important;
 }
 
 .formContainer input {
-    padding: 10px;
+    padding: 12px 25px;
     color: white;
     background: linear-gradient(90deg, rgba(147,39,143,1) 0%, rgba(0,255,255,1) 100%);
-    border-width: 1px;
-    border-style: solid;
-    border-image: linear-gradient(to right, rgba(147,39,143,1), rgba(0,255,255,1)) 1;
+    border: none;
     -webkit-box-shadow: inset 0px 0px 20px -4px rgba(0,0,0,0.75);
     -moz-box-shadow: inset 0px 0px 20px -4px rgba(0,0,0,0.75);
     box-shadow: inset 0px 0px 20px -4px rgba(0,0,0,0.75);
-    border-radius: 5px;
+    border-radius: 25px;
 }
 
 .formContainer input::placeholder {
@@ -59,11 +81,19 @@ header img {
 }
 
 .formContainer button, .buttonsContainer{
+    font-weight: 700;
+    font-size: 16px;
     padding: 9px;
-    color: #666666;
     background-color: white;
     border: none;
     margin-left: -5px;
+}
+
+.formContainer button {
+    background: #666666;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+transition: background 0.4s linear;
 }
 
 .formContainer button:hover {
@@ -72,6 +102,9 @@ header img {
     -webkit-text-fill-color: transparent;
     
 }
+
+
+/*LISTS*/
 
 .listsContainer {
     display: flex;
@@ -126,45 +159,140 @@ header img {
 
 
 .buttonsContainer {
-    margin-bottom: 50px;
+    margin-bottom: 35px;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
 
 }
 
 h4 {
+    /*font-family: weddingvintage;*/
     text-align: center;
     color: #666666;
+    font-size: 24px;
 }
+
 .buttonsContainer button {
-    padding: 9px;
+    padding: 12px 25px;
+    margin: 0px 42px;
     color: white;
     background-color: white;
     margin-left: -5px;
     background: linear-gradient(to left, rgba(0,255,255,1), rgba(147,39,143,1));
-    border-image: linear-gradient(to right, rgba(147,39,143,1), rgba(0,255,255,1)) 1;
-    box-shadow: inset 0px 0px 20px -4px rgb(0 0 0 / 75%);
+    border: 1px solid white;
+    border-radius: 25px;
+    -webkit-box-shadow: inset 0px 0px 20px -4px rgba(0,0,0,0.75);
+    -moz-box-shadow: inset 0px 0px 20px -4px rgba(0,0,0,0.75);
+    box-shadow: inset 0px 0px 20px -4px rgba(0,0,0,0.75);
+    transition: background 0.4s linear;
+}
+
+.buttonsContainer button:last-child {
+    padding: 12px 25px;
+    margin-right: 0px;
 }
 
 .buttonsContainer button:hover {
-    background: linear-gradient(to right, rgba(0,255,255,1), rgba(147,39,143,1));
+    background: #666666;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     
 }
 
-.titleFonts{
-    font-family: 'Norican', cursive; 
-}
-button, input {
-    font-family: 'Poppins', sans-serif;
-    font-weight: bold;
+/*ANIMATION*/
+
+.animation {
+    min-height: 239px;
+    max-height: 239px;
+    overflow: hidden;
 }
 
-.footer{
+.animationContainer {
+    position: relative;
+}
+
+#animationForest {
+    display: none;
+    min-height: 239px;
+    max-height: 239px;
+}
+
+#animationBird {
+    min-height: 239px;
+    max-height: 239px;
+}
+
+#animationSky {
+    display: none;
+    min-height: 239px;
+    max-height: 239px;
+}
+
+.first, .second, .third, .fourth, .fifth, .sixth {
+    position:absolute;
+    max-width: 100%;
+  }
+
+  .second { animation: 2s rotate360 infinite linear; }
+
+.first {
+    z-index: 1;
+}
+  
+.second {
+    z-index: -1;
+}
+
+.third{
+    z-index: -2;
+}
+  
+.fourth {
+    z-index: -3;
+}
+
+.fifth{
+    z-index: -4;
+}
+  
+.sixth {
+    z-index: -5;
+}
+
+
+#animationBird #birdSecond  {
+    animation: rotate-animation 40s infinite linear;
+}
+
+#animationBird #birdThird  {
+    animation: rotate-animation 80s infinite linear;
+}
+    
+#animationBird #birdFourth  {
+    animation: rotate-animation 160s infinite linear;
+}
+
+@keyframes rotate-animation {
+    0% {
+		transform: rotate(0deg);
+    }
+    50% {
+		transform: rotate(180deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+
+/*FOOTER*/
+
+footer{
     margin: auto;
     text-align: center;
-    margin: 60px 0;
+    margin: 40px 0 0 0;
+    font-weight: 700;
+    color: #666666;
 }
 .rombo{
     width: 10px;
@@ -176,8 +304,8 @@ button, input {
 }
 .separator {
     position: relative;
-    display: flex;
-    justify-content: center;
+    width: 200px;
+    margin: 0 auto;
 }
 .separator::before {
     content: "";
@@ -198,9 +326,33 @@ button, input {
 
 @media (min-width: 768px) {
 
-    .containerInfo, .formContainer, .buttonsContainer {
+    .containerInfo, .formContainer, .buttonsContainer, .animation {
         max-width: 600px;
         margin: 0 auto;
+    }
+
+    .buttonsContainer {
+        margin-bottom: 35px;
+    }
+
+    .animation {
+        min-height: 337px;
+        max-height: 337px;
+    }
+
+    #animationForest {
+        min-height: 337px;
+        max-height: 337px;
+    }
+    
+    #animationBird {
+        min-height: 337px;
+        max-height: 337px;
+    }
+    
+    #animationSky {
+        min-height: 337px;
+        max-height: 337px;
     }
 
     .listDreamyBirds, .listFreeBirds {
@@ -209,10 +361,34 @@ button, input {
     
     }
 
-    @media (min-width: 992px) {
+@media (min-width: 992px) {
 
-        .containerInfo, .formContainer, .buttonsContainer {
-            max-width: 800px;
+    .containerInfo, .formContainer, .buttonsContainer, .animation {
+        max-width: 800px;
+    }
+
+    .buttonsContainer {
+        margin-bottom: 35px;
+    }
+
+        .animation {
+            min-height: 450px;
+            max-height: 450px;
+        }
+
+        #animationForest {
+            min-height: 450px;
+            max-height: 450px;
         }
         
+        #animationBird {
+            min-height: 450px;
+            max-height: 450px;
         }
+        
+        #animationSky {
+            min-height: 450px;
+            max-height: 450px;
+        }
+        
+}
