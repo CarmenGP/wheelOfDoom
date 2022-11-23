@@ -1,5 +1,15 @@
 const initialList = [];
 const deletedList = [];
+document.getElementById("boton").disabled = true;
+
+function agregarjugadores(){
+    const input = document.getElementById("nombre")
+    initialList.push(input.value)
+    document.getElementById ("nombre").value= "";
+    document.getElementById("boton").disabled = false;
+    renderList();
+}
+
 function removeElementFromList() {
     const length = initialList.length;
     const elementToDelete = (Math.random() * length);
@@ -12,10 +22,6 @@ function removeElementFromList() {
         } 
         renderList();
 }
-    function init () {
-        initialList.push("Adriana","Alba","Alesia","Ana","Bea","Camila","CarmenC","CarmenG","Elena","Esther","Flor","Himo","Leidy","LolaG","LoalaN","Sierri","Natalia","Noa","PalomaB","PalomaR","Paula","Raquel","Sandra","VeroF","VeroK");
-        renderList()
-    }
     function renderList() {
         document.getElementById("list1").innerHTML = ""
         document.getElementById("list2").innerHTML = ""
@@ -34,6 +40,6 @@ function removeElementFromList() {
             document.getElementById("list2").append(divName);
         })
     }
-    init();
+
 
 
