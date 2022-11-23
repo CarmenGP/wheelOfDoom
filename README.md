@@ -15,13 +15,13 @@ https://github.com/AlesiaCoder
 * Carmen Gallardo - SCRUM Master
 https://github.com/CarmenGP
 
-* Camila Ruíz
+* Camila Ruíz - Developer
 https://github.com/camilaruiz17
 
-* Bea Ávila
+* Bea Ávila - Developer
 https://github.com/Beadeavila
 
-* Sierri Pérez Sánchez
+* Sierri Pérez Sánchez - Developer
 https://github.com/sierriconvoz
 
 ##  Screenshots
